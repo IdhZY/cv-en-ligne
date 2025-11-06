@@ -3,7 +3,7 @@
 @font-face{
   font-family: "Raleway";
   src: url(../fonts/raleway-regular.ttf) format(truetype);
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
@@ -46,11 +46,11 @@ main{
 }
 aside{
   width: 30%;
-  background-color: var(--gris-1);
+  background-color: var(--gris-2);
   padding-left: 2rem;
 }
 section{
-  width: 70%;
+  width: 100%;
   background-color: var(--blanc);
   padding-left: 2rem;
 }
@@ -63,13 +63,20 @@ h1{
 }
 h2{
   font-family: "Raleway";
-  color: var(--bleu);
-  
-}
-header h2{
-  color: var(--blanc);
+  color: var(--bleu); 
 }
 
+.separateur{
+  height: 2px;
+  width: 70%;
+  background-color: var(--gris-1);
+  margin: 1rem 0;
+}
+
+ul{
+  text-transform: uppercase;
+  color: var(--bleu);
+}
 /* HEADER */
 
 header{
@@ -78,6 +85,10 @@ header{
   justify-content: space-around;
   padding: 2rem;
   background-color: var(--bleu);
+  color: var(--blanc);
+}
+
+header h2{
   color: var(--blanc);
 }
 
@@ -94,9 +105,36 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
+.icon{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+address{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 5rem 0 5rem;
+}
+address p{
+  display: flex;
+  align-items: center;
+}
+
+address a{
+  color: var(--blanc);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+}
+.icon-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 /* FOOTER */
 footer{
   display: flex;
@@ -109,8 +147,10 @@ footer p{
   justify-content: center;
 }
 footer img{
-  width: 5%;
-  margin: 0;
+  display: flex;
+  gap: 1rem;
+  width: 30px;
+  height: 30px;
 }
 .footer{
   display: flex;

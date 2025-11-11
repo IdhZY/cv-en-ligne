@@ -9,7 +9,14 @@
 
 @font-face{
   font-family: "Raleway-Italic";
-  src: url(../fonts/raleway-italic.ttf) format(truetype);
+  src: url(../fonts/Raleway-Italic.ttf) format(truetype);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Raleway-Bold";
+  src:url(../fonts/Raleway-Bold.ttf) format(truetype);
   font-style: normal;
   font-display: swap;
 }
@@ -49,144 +56,35 @@ main{
 aside{
   width: 30%;
   background-color: var(--gris-2);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
 }
 
 section{
   width: 70%;
   background-color: var(--blanc);
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-bottom: 5rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 h2{
-  font-family: "Raleway";
+  font-family: "Lato";
   font-weight: 400;
   color: var(--bleu);
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 h3{
-  font-family: "Raleway";
-  font-weight: 700;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 1rem;
   margin: 0;
 }
 
-/* ASIDE*/
-
-.separateur-aside{
-  height: 2px;
-  width: 100%;
-  background-color: var(--gris-1);
-  margin-bottom: 1rem;
-}
-
-.fa-solid{ 
-  color: var(--bleu);
-}
-
-.fa-regular{
-  color: var(--bleu);
-}
-
-.skills{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.skills li{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .35rem 0;
-}
-
-.liste-langues li{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: .25rem 0;
-}
-
-.liste-langues {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.liste-aside{
-  padding-left: 1rem;
-  font-family: "Raleway";
-  font-weight: 300;
-  list-style-type: square;
-}
-.liste-aside li::marker{
-  font-size: 1.3rem;
-  color: var(--bleu);
-}
-
-.bold{
-  font-family: "Raleway";
-  font-weight: 700;
-}
-
-.light{
-  font-family: "Raleway";
-  font-weight: 400;
-}
-
-.article-aside{
-  margin-bottom: 3rem;
-}
-
-/* SECTION */
-
-.separateur-section{
-  height: 2px;
-  width: 100%;
-  background-color: var(--gris-1);
-  margin-bottom: 1rem;
-}
-
-.list-section{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-section li{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  column-gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.list-section li:hover{
-  background-color: var(--gris-1);
-}
-
-.list-section .info h3{
-  margin: 0 0 15rem 0;
-  font-family: "Raleway-Bold";
-}
-
-.list-section p{
-  font-family: "Raleway-Italic";
-  color: var(--noir);
-}
-
-.list-section .date{
-  color: var(--bleu);
-  white-space: nowrap;
-  align-self: center;
-}
 /* HEADER */
 
 header{
@@ -195,38 +93,38 @@ header{
   justify-content: space-around;
   background-color: var(--bleu);
   color: var(--blanc);
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
 h1{
-  font-family: "Raleway";
-  margin-top: 0;
+  font-family: "Lato";
+  margin-top: 1rem;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
 header h2{
   color: var(--blanc);
-  font-family: "Raleway";
+  font-family: "Lato";
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .photo-profil{
-  flex-basis: 30%;
   max-width: 150px;
   max-height: 150px;
   border-radius: 50%;
   border: 5px solid var(--blanc);
 }
+
 .photo-profil:hover{
   cursor: zoom-in;
 }
 
 .header-right{
-  flex-basis: 70%;
+  flex-basis: 53%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,18 +137,19 @@ header h2{
 }
 
 address{
-  font-family: "Raleway";
+
   font-weight: 300;
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 address a{
   color: var(--blanc);
   text-decoration: none;
   font-family: "Raleway";
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-top: 0;
   vertical-align: bottom;
 }
@@ -260,6 +159,115 @@ address a{
   flex-direction: column;
 }
 
+/* ASIDE*/
+
+.separateur-aside{
+  height: 2px;
+  width: 100%;
+  background-color: var(--gris-1);
+  margin-bottom: 1rem;
+}
+
+.article-aside{
+  margin-bottom: 2rem;
+}
+
+i{
+  color: var(--bleu);
+  font-size: 0.8rem;
+}
+
+.skills li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.skills{
+  margin: 0;
+  padding: 0;
+}
+
+.liste-langues li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  list-style: none;
+}
+
+.liste-langues{
+  margin: 0;
+  padding: 0;
+}
+
+.liste-aside{
+  padding-left: 1rem;
+  list-style-type: square;
+}
+
+.liste-aside li::marker{
+  font-size: 1.3rem;
+  color: var(--bleu);
+}
+
+.bold{
+  font-family: "Raleway-Bold";
+}
+
+/* SECTION */
+
+.separateur-section{
+  height: 2px;
+  width: 100%;
+  background-color: var(--gris-1);
+  margin-bottom: 1rem;
+}
+
+.indent{
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+.list-section{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-section li{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 0 solid var(--bleu);
+}
+
+.list-section li:hover{
+  background-color: var(--gris-1);
+  border-left-width: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.list-section p{
+  font-family: "Raleway-Italic";
+  color: var(--noir);
+  font-size: 0.7rem;
+}
+
+.date{
+  font-family: "Raleway";
+  color: var(--bleu);
+  white-space: nowrap;
+  align-self: center;
+}
+
+
 /* FOOTER */
 
 footer{
@@ -267,16 +275,20 @@ footer{
   flex-direction: column;
   background-color: var(--bleu);
   color: var(--blanc);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-footer p{
+footer time{
   font-family: "Raleway-Italic";
   font-weight: 300;
   opacity: 90%;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
+
 
 footer img{
   margin-top: 1rem;
